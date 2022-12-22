@@ -1,24 +1,24 @@
-# Gaga Miner Android SDK integration Tutorial
+## Gaga Miner Android SDK integration Tutorial
 
 - This document is a simple example of SDK integration.
 - For official stable running application reference please go to [Gaga Android](https://github.com/gaganode/gaga_android).
 
-## 1. Go to GitHub to download the latest version .jar SDK
+### 1. Go to GitHub to download the latest version .jar SDK
 
 [https://github.com/gaganode/gaga_android_sdk](https://github.com/gaganode/gaga_android_sdk)
 
-## 2. Add the SDK.jar file to your libs folder and Add as library
+### 2. Add the SDK.jar file to your libs folder and Add as library
 
 ![](https://user-images.githubusercontent.com/46369948/206830317-a9d801d1-c35a-4f64-80b4-616efa5d77cb.jpg)
 
-## 3. Add the SDK.jar file to your libs folder and Add as library
+### 3. Add the SDK.jar file to your libs folder and Add as library
 
 ```java
 <uses-permission android:name="android.permission.INTERNET" >
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-## 4. In your Activity start the sdk
+### 4. In your Activity start the sdk
 
 ```java
 String token= "{your token}";
