@@ -24,9 +24,9 @@
 String token= "{your token}";
 SharedPreferences miner_sdk_sp= getSharedPreferences("miner_sdk",MODE_PRIVATE);
 long node_id=miner_sdk_sp.getLong("node_id", Math.abs(new Random().nextLong()));
-miner_sdk_sp.edit().putLong(“node_id",node_id).apply();
+miner_sdk_sp.edit().putLong("node_id",node_id).apply();
 
 //MinerSdk.setProduct(Build.BRAND+":"+Build.MODEL); //optional:for better optimization
-MinerSdk.Init(token,node_id);
-MinerSdk.Start();
+MinerSdk.init(node_id,token);
+MinerSdk.start();
 ```
